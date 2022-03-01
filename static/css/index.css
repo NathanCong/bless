@@ -1,0 +1,139 @@
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  background-color: #ccc;
+  background-image: url('../image/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: 0 0;
+  opacity: 0;
+}
+
+#start {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.line {
+  color: #fff;
+  opacity: 0;
+  font-family: sans-serif;
+  padding: 20px 0;
+  font-size: 26px;
+  text-align: center;
+}
+
+.audio-wrapper {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.audio-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('../image/music.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.bg.fade-in {
+  transition: all 2s;
+  opacity: 1;
+}
+
+.line.fade-in {
+  transition: all 3s;
+  opacity: 0.9;
+}
+
+.audio-wrapper.rotate {
+  animation: customRotate 10s linear infinite;
+  -webkit-animation: customRotate 10s linear infinite;
+  -moz-animation: customRotate 10s linear infinite;
+}
+
+@keyframes customRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes customRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes customRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fs-35 {
+  font-size: 35px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
